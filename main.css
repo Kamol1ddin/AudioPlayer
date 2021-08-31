@@ -1,0 +1,202 @@
+*{
+        font-family: 'Roboto', sans-serif;
+        box-sizing: border-box;
+}  
+body{
+        width: 100vw;
+        height: 100vh;
+        background-color: #14151d;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+.music_player{
+        width: 25%;
+        height: 95%;
+        background-color: #20222c;
+        margin-left: 700px;
+        display: flex;
+        flex-direction: column;
+}
+.music_nav{
+        width: 95%;
+        height: 6%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1% auto;
+}
+.music_nav p{
+        color: #ff0000;
+        text-decoration: none;
+        font-size: 25px;
+        cursor: pointer;
+}
+.show_num{
+        width: 20%;
+        height: 70%;
+        background-color: #14151d;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+}
+.show_num p{
+        color: #83a6ff;
+}
+.menu{
+        border-radius: 10px;
+        width: 110px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.music_item{
+        width: 100%;
+        height: 55%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+}
+.music_img{
+        width: 100%;
+        height: 85%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+}
+.music_img img{
+        width: 15%;
+        height: 32%;
+        border-radius: 50%;
+        position: fixed;
+}
+.img_anim{
+        animation: anim 3s infinite ease-in;
+}
+@keyframes anim{
+        from{
+                transform: rotate(0deg);
+                transition: ease-in 1s;
+        }
+        to{
+                transform: rotate(360deg);
+                transition: ease-out 1s;
+        }
+}
+.music_title{
+        width: 90%;
+        height: 14.5%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.music_title h1{
+        color: #ff0000;
+}
+.music_controls{
+        width: 100%;
+        height: 40%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+}
+.music_progress{
+        width: 90%;
+        height: 3%;
+        position: absolute;
+        background-color: #fff;
+        top: 15%;
+        left: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .6s;
+        border-radius: 50px;
+        cursor: pointer;
+}
+.progress{
+        height: 100%;
+        background-color: #83a6ff;
+        position: absolute;
+        left: 0;
+        border-radius: 50px;
+        transition: all .4s;
+        cursor: pointer;
+}
+.progress:hover{
+        background-color: #ff0000;
+}
+.music_buttons{
+        width: 65%;
+        height: 20%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        top: 130px;
+        left: 90px;
+}
+.music_buttons button{
+        width: 25%;
+        height: 100%;
+        border: 0;
+        background-color: #20222c;
+}
+.music_buttons button i{
+        color: #83a6ff;
+        font-size: 250%;
+        transition: all .5s;
+}
+.music_buttons button i:hover{
+        color: #ff0000;
+        transition: all .5s;
+}
+.music_volume{
+        width: 80%;
+        height: 25%;
+        position: absolute;
+        top: 70%;
+        left: 11%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+}
+.show_volume{
+        color: #83a6ff;
+        font-size: 28px;
+}
+.music_volume button{
+        background-color: #20222c;
+        border: 0;
+}
+.music_volume i{
+        color: #83a6ff;
+        font-size: 200%;
+}
+.music_menu{
+        width: 25%;
+        height: 95%;
+        background-color: #20222c;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        transition: all .8s;
+        transform: translateX(100%);
+}
+.music_menu li{
+        color: #83a6ff;
+        font-size: 200%;
+        text-decoration: none;
+        cursor: pointer;
+        margin-left: 50px;
+        transition: all .2s;
+}
+.music_menu li:hover{
+        color: #ff0000;
+        transform: scale(1.1);
+        transition: all .2s;
+}
